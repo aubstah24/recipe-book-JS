@@ -15,4 +15,4 @@ My recipes are tagged with one or more categories so that I may find them easier
 
 ## Website Features
 
-*Filter System || Insertion, Deletion, Update Capabilities || Upload Capabilities
+Filter System || Insertion, Deletion, Update Capabilities || Upload Capabilities
