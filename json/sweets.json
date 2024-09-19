@@ -1,0 +1,135 @@
+{
+  "sweetItems": [
+    {
+      "id": 1,
+      "name": "Apple Pie",
+      "tags": [
+        "Medium",
+        "Pie"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Banana Muffins",
+      "tags": [
+        "Medium",
+        "Vegan",
+        "Unrefined Sugars",
+        "Singles"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Black Sesame Mochi Cake",
+      "tags": [
+        "Hard",
+        "Cake"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Bread Pudding Sweet Rolls",
+      "tags": [
+        "Easy",
+        "Bread"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Caramel",
+      "tags": [
+        "Easy",
+        "GF",
+        "Topping"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Chocolate Brownies",
+      "tags": [
+        "Medium",
+        "Chocolate",
+        "Pastry"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Disneyland Churros",
+      "tags": [
+        "Medium",
+        "Pastry"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Mirror Glaze Cake",
+      "tags": [
+        "Hard",
+        "Cake"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Matcha White Chocolate Chip Scones",
+      "tags": [
+        "Medium",
+        "Pastry",
+        "Unrefined Sugars"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Matcha Glazed Donuts",
+      "tags": [
+        "Medium",
+        "Pastry",
+        "Unrefined Sugars"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Gluten-Free Oatmeal Cookies",
+      "tags": [
+        "Medium",
+        "GF",
+        "Singles"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Peanut Butter Cookies",
+      "tags": [
+        "Medium",
+        "Singles"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Gluten & Sugar-Free Peanut Butter Cookies",
+      "tags": [
+        "Medium",
+        "GF",
+        "Sugar Free",
+        "Singles"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Pumpkin Praline Bread Pudding",
+      "tags": [
+        "Medium",
+        "Bread"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Vegan Chocolate Cake",
+      "tags": [
+        "Medium",
+        "Vegan",
+        "Sugar Free",
+        "Cake"
+      ]
+    }
+]
+}

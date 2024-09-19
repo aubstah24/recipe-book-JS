@@ -1,0 +1,25 @@
+{
+  "savoryItems": [
+    {
+      "id": 1,
+      "name": "Ground Turkey Burger",
+      "tags": [
+        "Medium"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Portuguese Bean Soup",
+      "tags": [
+        "Hard"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "The Perfect Steak",
+      "tags": [
+        "Easy"
+      ]
+    }
+  ]
+}

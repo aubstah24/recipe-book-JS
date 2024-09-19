@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aubrie Usui | Life Recipes</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+    <title>Brie's Bakes & Recipes</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="home">
     <!-- //  INTRO  // -->
@@ -15,39 +15,43 @@
       <div class="content-bg">
         <header>
           <!-- Start content edits below this line. -->
-          <h1>Recipes By Aubs</h1>
+          <h1>Brie's Bakes</h1>
           <h2>Your Favorite Home Baker</h2>
 
           <!-- End content edits here. -->
         </header>
     <!-- //  ABOUT ME  // -->
-        <main>
+        <main class="content-wrapper">
             <section>
-                <ul class="filter-list">
+                <p>
+                    Welcome to Brie's Bakes & Recipes!  Here I have all my recipes I collected over the course of my baking career.  Some are old and some are new, but they taste great I promise :P
+                </p>
+            </section>
+
+
+            <section class="project-wrapper">
+                <ul class="category">
                     <li class="filter-items">
-                        No Bake
+                        <a href="components/nobake.html">NO BAKE</a>
                     </li>
                     <li class="filter-items">
-                        Vegan
+                        <a href="components/sweets.html">SWEET TOOTH</a>
                     </li>
                     <li class="filter-items">
-                        Oven Bake
+                        <a href="components/breads.html">BREADS</a>
                     </li>
                     <li class="filter-items">
-                        Stove Bake
-                    </li>
-                    <li class="filter-items">
-                        Sugar-Free
-                    </li>
-                    <li class="filter-items">
-                        Natural Sugar
+                        <a href="components/savory.html">SAVORY EATS</a>
                     </li>
                 </ul>
             </section>
 
 
-            <section>
-
+            <section class="search">
+                <form id="form" role="search">
+                    <label for="recipe-search"></label><input type="search" id="recipe-search" name="q" placeholder="Search Recipes..." />
+                    <button>Search</button>
+                </form>
             </section>
         </main>
       </div>

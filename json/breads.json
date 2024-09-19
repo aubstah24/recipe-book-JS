@@ -1,0 +1,65 @@
+{
+  "breadItems": [
+    {
+      "id": 1,
+      "name": "Banana Bread",
+      "tags": [
+        "Medium",
+        "Bread",
+        "Unrefined Sugars"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Banana Bread 2",
+      "tags": [
+        "Medium",
+        "Bread",
+        "Unrefined Sugars"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Biscuits",
+      "tags": [
+        "Medium",
+        "Bread"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Bagel",
+      "tags": [
+        "Medium",
+        "Bread",
+        "Unrefined Sugars"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Healthy Cinnamon Rolls",
+      "tags": [
+        "Medium",
+        "Bread",
+        "Unrefined Sugars",
+        "GF"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Pop-over Bread",
+      "tags": [
+        "Medium",
+        "Bread"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Ube Mochi Bread",
+      "tags": [
+        "Medium",
+        "Bread"
+      ]
+    }
+  ]
+}
