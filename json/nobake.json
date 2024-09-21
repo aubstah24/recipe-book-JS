@@ -1,5 +1,4 @@
-{
-  "noBakeItems": [
+
     {
       "id": 1,
       "name": "Chia Seed Pudding",
@@ -105,5 +104,3 @@
         "Unrefined Sugars"
       ]
     }
-]
-}

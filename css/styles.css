@@ -27,26 +27,35 @@ COLOR PALETTE
     body {
         background-color: #BEDBE4;
         margin: 0;
-        font-family: "Montserrat", sans-serif;
-        font-size: 1.4rem;
-        line-height: 1.3;
+        font-family: "Playpen Sans", cursive;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 1.6rem;
+        line-height: 1.5;
     }
     
     h1, h2, h3 {
         font-family: "Nerko One", cursive;
-        /*font-weight: 400;*/
+        font-weight: 400;
         font-style: normal;
         margin: 0;
     }
 
     h1 {
         font-size: 6rem;
+        text-align: center;
+        color: #10564F;
     }
 
     h2 {
         font-size: 3rem;
+        color: #10564F;
+
     }
 
+    h3 {
+        font-size: 2rem;
+    }
     /* links */
     a {
         color: #071330;
@@ -65,8 +74,8 @@ COLOR PALETTE
     }
     
     .btn {
-        background: #DE847B;
-        color: #3B0404;
+        background: #10564F;
+        color: #71A6BB;
         text-transform: uppercase;
         text-decoration: none;
         font-size: 1.2rem;
@@ -82,6 +91,8 @@ COLOR PALETTE
         padding: 30px;
         max-width: 1100px;
     }
+
+
     /*
         HOME
         ---------------------------------------*/
@@ -103,6 +114,11 @@ COLOR PALETTE
     }
 
     .home header {
+        color: #10564F;
+    }
+
+    .page-wrapper header {
+        text-align: center;
         color: #10564F;
     }
 
@@ -140,28 +156,188 @@ COLOR PALETTE
     NO BAKE
     ---------------------------------------*/
 
-
-
-
-    /*
-       RECIPES
-       ---------------------------------------*/
-
-
-    .socials li {
-        display: inline-block;
-        margin: 0 10px;
+    #myInput {
+        width: 80%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
     }
 
-    .socials img {
-        width: 32px;
-    }
-
-    .socials {
+    #myUL {
         list-style-type: none;
         padding: 0;
+        margin: auto;
+        width: 80%;
+
     }
 
+    #myUL li a {
+        border: 1px solid #ddd;
+        margin-top: -1px; /* Prevent double borders */
+        background-color: #89BED0;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        display: block
+    }
+
+    .no-bake-wrapper button {
+        padding: 10px 20px;
+        margin: 30px;
+        background-color: #10564F;
+        color: white;
+    }
+
+    .no-bake-list {
+        margin: auto;
+    }
+
+    /*
+       RECIPES TEMPLATE
+       ---------------------------------------*/
+    .recipe {
+        margin: auto;
+    }
+
+    .recipe-header {
+        width: 100%;
+    }
+
+    .recipe-info li {
+        display: inline-block;
+        /*margin: 0 10px;*/
+        color: white;
+        background-color: #10564F;
+        padding: 15px;
+    }
+
+    .recipe-info {
+        list-style-type: none;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .extra-notes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .extra-notes div {
+        padding: 30px;
+    }
+
+    .recipe-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1500px;
+        margin: auto;
+    }
+
+    .recipe-ingredients {
+        background-color: #71A6BB;
+        color: white;
+        width: 20%;
+        height: max-content;
+    }
+
+    .recipe-ingredients div h2 {
+        text-align: center;
+    }
+
+    .ingredients {
+        list-style-type: circle;
+    }
+
+    .recipe-directions {
+        width: 70%;
+        height: auto;
+        text-align: start;
+    }
+
+    .directions {
+        list-style-type: decimal ;
+    }
+
+    @media screen and (min-width:1160px) and (max-width:1630px) {
+        .recipe-wrapper {
+            max-width: 1100px;
+        }
+
+        .recipe-ingredients {
+            width: 25%;
+        }
+
+        .recipe-directions {
+            padding: 10px;
+        }
+    }
+
+    @media screen and (min-width:530px) and (max-width:1159px) {
+        .recipe-wrapper {
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: auto;
+        }
+
+        .recipe-ingredients {
+            width: 50%;
+            margin: auto;
+
+        }
+
+        .recipe-directions {
+            width: 100%;
+            padding: 20px 30px;
+        }
+
+    }
+
+
+    @media screen and (max-width:529px) {
+        .recipe-info li {
+             display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .info-list {
+            margin: 10px;
+        }
+
+        .extra-notes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .extra-notes div {
+            padding: 0;
+        }
+
+        .recipe-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: auto;
+        }
+
+        .recipe-ingredients {
+            width: 80%;
+            margin: auto;
+
+        }
+
+        .recipe-directions {
+            width: 100%;
+            padding: 20px 30px;
+        }
+    }
 
     /*
         RESUME
