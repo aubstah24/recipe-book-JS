@@ -153,11 +153,21 @@ COLOR PALETTE
     }
 
     /*
-    NO BAKE
+    CATEGORIES
     ---------------------------------------*/
 
+    .category-input {
+        width: 60%;
+        margin: auto;
+        padding-bottom: 30px;
+    }
+
+    .page-wrapper {
+        padding-bottom: 40px;
+    }
+
     #myInput {
-        width: 80%;
+        width: 100%;
         font-size: 16px;
         padding: 12px 20px 12px 40px;
         border: 1px solid #ddd;
@@ -193,11 +203,12 @@ COLOR PALETTE
         margin: auto;
     }
 
-    /*
+    /*1
        RECIPES TEMPLATE
        ---------------------------------------*/
     .recipe {
         margin: auto;
+        padding-bottom: 40px;
     }
 
     .recipe-header {

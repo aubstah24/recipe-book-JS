@@ -10,26 +10,85 @@
     <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body class="no-bake">
-<a class="btn download-link" href="../index.html">Back to Home</a>
-<div class="page-wrapper">
-    <header>
-        <h1>Savory Eats Recipes</h1>
-        <h3>Recipes handed down from my mama who is the best cook in the world.  Feed a whole family with these recipes.</h3>
-    </header>
+<body class="category-wrapper">
+    <a class="btn download-link" href="../index.html">Back to Home</a>
+    <div class="page-wrapper">
+        <header>
+            <h1>Savory Eats Recipes</h1>
+            <h3>Recipes handed down from my mama who is the best cook in the world.  Feed a whole family with these recipes.</h3>
+        </header>
 
-    <main>
+        <main class="no-bake-wrapper">
 
-        <section>
-            <h2>Table of Contents</h2>
-            <div id="nobakeDataDisplay">
+            <button onclick="sortList()">Sort</button>
 
-            </div>
-            <script src="nobake.js"></script>
-        </section>
 
-    </main>
-</div>
+
+            <section class="no-bake-list">
+                <div class="category-input">
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for recipes.." title="Type in a name">
+                </div>
+
+                <ul id="myUL">
+                    <li><a href="../recipes">Ground Turkey Burger</a></li>
+                    <li><a href="../recipes">Portuguese Bean Soup</a></li>
+                    <li><a href="../recipes">The Perfect Steak</a></li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+
+        function sortList() {
+            var list, i, switching, b, shouldSwitch;
+            list = document.getElementById("id01");
+            switching = true;
+            /* Make a loop that will continue until
+            no switching has been done: */
+            while (switching) {
+                // Start by saying: no switching is done:
+                switching = false;
+                b = list.getElementsByTagName("LI");
+                // Loop through all list items:
+                for (i = 0; i < (b.length - 1); i++) {
+                    // Start by saying there should be no switching:
+                    shouldSwitch = false;
+                    /* Check if the next item should
+                    switch place with the current item: */
+                    if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+                        /* If next item is alphabetically lower than current item,
+                        mark as a switch and break the loop: */
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+                if (shouldSwitch) {
+                    /* If a switch has been marked, make the switch
+                    and mark the switch as done: */
+                    b[i].parentNode.insertBefore(b[i + 1], b[i]);
+                    switching = true;
+                }
+            }
+        }
+    </script>
 
 </body>
 </html>
