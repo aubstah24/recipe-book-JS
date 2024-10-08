@@ -125,12 +125,13 @@ COLOR PALETTE
     .category li {
         display: inline-block;
         margin: 0 10px;
-        background-color: #10564F;
-        padding: 3px 5px;
     }
 
     .category li a {
         color: white;
+        background-color: #10564F;
+        padding: 3px 5px;
+
     }
 
     .category {
@@ -202,6 +203,18 @@ COLOR PALETTE
     .no-bake-list {
         margin: auto;
     }
+
+    @media screen and (max-width:718px) {
+        .category {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .category li {
+            padding-bottom: 10px;
+        }
+    }
+
 
     /*1
        RECIPES TEMPLATE
@@ -426,19 +439,19 @@ COLOR PALETTE
         }
     }
     
-    @media screen and (min-width:650px) and (max-width:1043px) {
-        .project-wrapper {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            column-gap: 20px;
-        }
-        .project-item img {
-            width: 100%;
-        }
-        .project-item h3 {
-            margin-top: 10px;
-        }
-    }
+    /*@media screen and (min-width:650px) and (max-width:1043px) {*/
+    /*    .project-wrapper {*/
+    /*        display: grid;*/
+    /*        grid-template-columns: repeat(2, 1fr);*/
+    /*        column-gap: 20px;*/
+    /*    }*/
+    /*    .project-item img {*/
+    /*        width: 100%;*/
+    /*    }*/
+    /*    .project-item h3 {*/
+    /*        margin-top: 10px;*/
+    /*    }*/
+    /*}*/
     
     @media screen and (max-width:500px) {
         .project-item img {
